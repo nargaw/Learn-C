@@ -24,12 +24,17 @@ int main()
     //&vowels[i] - gives the memory loaction of the ith element of the array vowels
     //pvowels took the address of vowels
     //pvowels + i is a valid op
+    //%p - address &vowel[i]
+    //&vowels[i] amd pvowels + i are equivalent - both point to the location 
 
     // Print the values
     for (i = 0; i < 5; i++) 
     {
         printf("vowels[%d]: %c, *(pvowels + %d): %c, *(vowels + %d): %c\n", i, vowels[i], i, *(pvowels + i), i, *(vowels + i));
     }
+
+    //*(pvowels + i) and *(vowels + i)  both return the ith element of the array
+    //name of an array itself is a (constant) pointer to the first element of the array
 
     return 0;
 }
