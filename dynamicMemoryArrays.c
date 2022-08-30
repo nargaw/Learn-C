@@ -23,7 +23,7 @@ int main()
     printf("\n");
     free(pvowels);
 
-    //
+    //free() - function must be called responsibly because memory leaks can occur
 
     return 0;
 }
