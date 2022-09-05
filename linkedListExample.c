@@ -20,5 +20,6 @@ int main()
 
     //print the memory address of where the pointer is pointing
     printf("new person at %p\n", newPerson);
+    //
     return 0;
 }
