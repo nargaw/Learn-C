@@ -30,10 +30,7 @@ void printTabs(int numTabs)
     }
 }
 
-void printTree(treenode* root)
-{
-    printTree_rec(root, 0);
-}
+
 
 void printTree_rec(treenode *root, int level)
 {
@@ -59,6 +56,11 @@ void printTree_rec(treenode *root, int level)
     printf("done\n");
 }
 
+void printTree(treenode* root)
+{
+    printTree_rec(root, 0);
+}
+
 
 int main()
 {
@@ -72,6 +74,8 @@ int main()
     n1->right = n3;
     n3->left = n4;
     n3->right = n5;
+
+    printTree(n1);
 
     free(n1);
     free(n2);
